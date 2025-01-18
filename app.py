@@ -173,8 +173,5 @@ if len(columns) >= 2:
             *Insight*: This table includes the original data with the assigned cluster for each customer. You can analyze customer traits within each cluster to develop targeted strategies.
             """)
 
-            # Download Clustered Data
-            st.write("### Download Clustered Data")
-            csv = clustered_data.to_csv(index=False)
-            st.download_button(label="Download CSV", data=csv, file_name='clustered_data.csv', mime='text/csv')
+
         
